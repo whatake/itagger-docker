@@ -1,0 +1,7 @@
+services:
+  itagger:
+    build: .
+    container_name: itagger
+    volumes:
+      - /srv/mergerfs/Storage/Media/Mangas:/manga
+    restart: unless-stopped
